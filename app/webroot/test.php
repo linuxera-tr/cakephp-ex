@@ -16,6 +16,12 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+# print Headers first
+$headers = apache_request_headers();
+
+foreach ($headers as $header => $value) {
+    echo "$header: $value <br />\n";
+
 set_time_limit(0);
 ini_set('display_errors', 1);
 
