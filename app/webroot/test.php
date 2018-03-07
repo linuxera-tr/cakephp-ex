@@ -21,6 +21,7 @@ $headers = apache_request_headers();
 
 foreach ($headers as $header => $value) {
     echo "$header: $value <br />\n";
+}
 
 set_time_limit(0);
 ini_set('display_errors', 1);
